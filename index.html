@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Thy ❤️ Beca</title>
+
+<style>
+
+body{
+background:linear-gradient(180deg,#140021,#2b004d);
+color:white;
+font-family:Arial;
+text-align:center;
+padding:30px;
+}
+
+h1{
+color:#d0a6ff;
+font-size:40px;
+}
+
+h2{
+color:#b185ff;
+}
+
+.container{
+max-width:800px;
+margin:auto;
+background:#1e0033;
+padding:30px;
+border-radius:15px;
+box-shadow:0 0 25px rgba(170,0,255,0.5);
+}
+
+img{
+width:100%;
+margin-top:15px;
+border-radius:12px;
+box-shadow:0 0 15px #7b2cbf;
+}
+
+input{
+padding:10px;
+border-radius:8px;
+border:none;
+}
+
+button{
+padding:10px 20px;
+background:#7b2cbf;
+border:none;
+color:white;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+#text{
+margin-top:20px;
+text-align:left;
+white-space:pre-line;
+line-height:1.7;
+font-size:18px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="login">
+
+<h2>🔒 Surpresa para Beca</h2>
+<p>Digite a senha</p>
+
+<input type="password" id="senha">
+<br><br>
+
+<button onclick="entrar()">Entrar</button>
+
+</div>
+
+<div id="site" style="display:none">
+
+<div class="container">
+
+<h1>Thy ❤️ Beca</h1>
+
+<p>Desde 07/04/2025</p>
+
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+<img src="foto3.jpg">
+<img src="foto4.jpg">
+<img src="foto5.jpg">
+
+<div id="text"></div>
+
+</div>
+
+</div>
+
+<iframe width="0" height="0"
+src="https://www.youtube.com/embed/csHh7Y0n1X4?autoplay=1&loop=1">
+</iframe>
+
+<script>
+
+function entrar(){
+
+let senha=document.getElementById("senha").value;
+
+if(senha==="beca"){
+
+document.getElementById("login").style.display="none";
+document.getElementById("site").style.display="block";
+
+}
+
+else{
+
+alert("Senha errada 😅");
+
+}
+
+}
+
+let mensagem=`Meu amor,
+
+Primeiramente gostaria de dizer o quanto eu te amo e o quanto vc é especial pra mim, tudo na minha vida só fez sentido a partir do momento que vc apareceu e posso dizer com muito orgulho que vc me mudou e trouxe com vc um brilho e uma gentileza e (nao só isso), vc é perfeita meu amor, e eu amo cada parte sua e nem falo só de aparência, mas tbm falo da sua alma, do seu caráter, da sua personalidade e resumindo vc toda.
+
+Eu nao sei oq eu faria sem você, sem suas gracinhas e seu jeito de ser, o seu humor, o seu sorriso que me traz alegria, sua vontade de ser alguém e seu esforço e acima de tudo a sua bondade, sei o quanto o seu coração é puro e o quão boa vc é, e hoje nao faço isso apenas para vc me desculpar, mas sim pq eu te amo e sei que vc merece isso e muito mais, te agradeço por tudo meu bem e sempre terei orgulho da menininha mulher que vc é, e sei que Deus está cuidando de você e te protegendo sempre e sei também que ele tem um propósito na sua vida, apenas aceite, nao tenho muito oque falar pois é difícil descrever vc, nao há palavras no vocabulário que possa ser usar para te descrever, vc é maravilhosa meu bem, eu te amo até o infinito pois ele nao tem fim, e me desculpa por magoar vc e te deixar chateada. Sou tao feliz cntg e quero que façamos 1 ano logo e mais anosssss.
+🤍🤟🏽
+
+Como não posso estar aí cuidando de você agora, fiz isso pra lembrar o quanto você é importante pra mim.`
+
+let i=0
+
+function escrever(){
+
+if(i<mensagem.length){
+
+document.getElementById("text").innerHTML+=mensagem.charAt(i)
+
+i++
+
+setTimeout(escrever,25)
+
+}
+
+}
+
+escrever()
+
+</script>
+
+</body>
+</html>
